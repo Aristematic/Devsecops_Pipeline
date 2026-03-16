@@ -8,6 +8,10 @@ on:
   pull_request:
     branches: [ main ]
 
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: aristematic/devsecops_pipeline
+
 jobs:
   test:
     name: Unit Testing
